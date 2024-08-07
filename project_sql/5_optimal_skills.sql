@@ -18,7 +18,7 @@ WHERE
     salary_year_avg IS NOT NULL AND
     job_location = 'New York, NY'
 GROUP BY skills_dim.skills 
-HAVING COUNT(*) > 10
+HAVING COUNT(*) > 23
 ORDER BY 
     avg_salary DESC,
     job_count DESC
